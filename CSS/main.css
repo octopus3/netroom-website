@@ -9,11 +9,15 @@ li {
 	float: right;		/*对象浮动在右边*/
 }
 
+img{
+    vertical-align:middle;
+}
+
 li a{
 	display: block;		/*将对象指定为块元素*/
 	 color: white;		/*指定字体为白色*/
 	 text-align: center; 		/*内容居中对齐*/
-    padding: 24px 40px;			/*上下24像素 左右边距40像素*/
+    padding: 24px 60px;			/*上下24像素 左右边距40像素*/
     text-decoration: none; 		/*文本装饰*/
 }
 li a:hover{
@@ -30,14 +34,14 @@ li a:hover{
 
 
 .head_nav_div{
-    width: 60%;				/*宽度*/
-    float: left;			/*左浮动*/
-    line-height: 68px;
+    width: 100%;				/*宽度*/
+    float: right;			/*右浮动*/
+    line-height: 26px;      /*行高*/
 }
+
 .h1{
 	width:100%;
 	color: #00FFFF;
-
 }
 
 .head_nav{
@@ -55,9 +59,24 @@ li a:hover{
     filter:alpha(opacity=90);		/*滤镜效果*/
     -moz-opacity:0.9;
     opacity:0.9;
-    -khtml-opacity: 0.9;  
+    opacity: 0.9;  
 }
+
+.head_logo_div{
+    width: 10%;
+    float: left;
+    line-height: 90px;
+    text-align: center;
+}
+
+
 
 .clear{
     clear: both;
+}
+
+.logo_img{
+    width:456px;
+    height: 75px;
+    margin-bottom: 31px; /*定义外补白*/
 }
