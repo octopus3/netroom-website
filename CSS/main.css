@@ -35,7 +35,7 @@ li a:hover{
 
 .head_nav_div{
     width: 100%;				/*宽度*/
-    float: right;			/*右浮动*/
+    float: center;			/*右浮动*/
     line-height: 26px;      /*行高*/
 }
 
@@ -47,6 +47,23 @@ li a:hover{
 .head_nav{
     margin: 0 auto;
 }
+
+.head_nav ul li{
+    float: left;
+    margin-right: 33px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.head_nav ul li a{
+    font-size: 31px;
+    color: white;
+    -webkit-transition: all 1.1s;
+    -moz-transition: all 1.1s;
+    -o-transition: all 1.1s;
+    transform: all 1.1s;
+}
+
 
 .head{
     position: fixed;
@@ -63,12 +80,11 @@ li a:hover{
 }
 
 .head_logo_div{
-    width: 10%;
+    width: 20%;
     float: left;
-    line-height: 90px;
+    line-height: 66px;
     text-align: center;
 }
-
 
 
 .clear{
@@ -76,7 +92,8 @@ li a:hover{
 }
 
 .logo_img{
-    width:456px;
-    height: 75px;
+    width:145px;
+    height: 70px;
     margin-bottom: 31px; /*定义外补白*/
 }
+
