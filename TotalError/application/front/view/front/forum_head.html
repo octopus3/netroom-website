@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>网络工作室论坛登录</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link type="text/css" rel="stylesheet" href="web/back/styles/general.css">
+<link type="text/css" rel="stylesheet" href="web/back/styles/forum.css">
+
+<style type="text/css">
+body {
+  color: white;
+}
+</style>
+</head>
+<body style="background: #278296">
+<form onSubmit="" name="theForm" action="index.php?p=back&c=Admin&a=check" method="post">
+  <table cellspacing="0" cellpadding="0" align="center" style="margin-top: 100px">
+  <tbody><tr>
+    <td><img border="0" width="178" height="256" alt="网络工作室论坛" src="web/front/images/login1.png"></td>
+    <td style="padding-left: 50px">
+      <table>
+      <tbody><tr>
+        <td>用户名：</td>
+        <td><input type="text" name="username"></td>
+      </tr>
+      <tr>
+        <td>密码：</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <!--
+      <tr>
+        <td>验证码：</td>
+        <td><input type="text" class="capital" name="captcha"></td>
+      </tr>
+      <tr>
+      <td align="right" colspan="2"><img border="1" width="145" height="20" title="看不清？点击更换另一个验证码。" style="cursor: pointer;" onclick="this.src=&quot;index.php?act=captcha&amp;&quot;+Math.random()" alt="CAPTCHA" src="index.php?act=captcha&amp;1533540459">
+      </td>
+      </tr>
+      -->
+      <tr><td colspan="2"><input type="checkbox" id="remember" name="remember" value="1"><label for="remember">请保存我这次的登录信息。</label></td></tr>
+      <tr><td>&nbsp;</td><td><input type="submit" class="button" value="进入管理中心"></td></tr>
+      <tr>
+        <td align="right" colspan="2">» <a style="color:white" href="index.php?p=front">返回首页</a> » <a style="color:white" 
+          href="index.php?p=back&c=Admin&a=forget_pwd">您忘记了密码吗?</a></td>
+      </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  </tbody></table>
+</form>
+</body></html>
