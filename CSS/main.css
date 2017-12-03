@@ -97,9 +97,21 @@ li a:hover{
     margin-bottom: 31px; /*定义外补白*/
 }
 
+.wrapBox {
+    top: -15px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
 .box {
     overflow: hidden;
     position: relative;
     width: 100%;
     height: 100%;
+}
+
+.box_bg{
+    position: absolute;
+
 }
