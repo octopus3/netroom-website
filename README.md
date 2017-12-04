@@ -12,7 +12,14 @@
 ![页面](/页面.png)
 
 # **Javascript**
-> ##窗口监听函数
+> # 弹窗函数
+> ``` javascript
+> function _alert(strings)
+>{
+>	alert(strings);
+>}
+> ```
+> ## 窗口监听函数
 > 利用IB判断放大或者缩小窗口是否会大于这个背景大小,然后调用图片改变函数调整大小
 > ```javascript
 >window.onresize = function(){  
