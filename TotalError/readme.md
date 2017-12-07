@@ -29,9 +29,45 @@
 >>styles 放置css文件
 > # 4.index.php 
 > [入口文件](./index.php)
-> ## 入口文件
-> 自动加载函数
+> **变量解释**
+> **DS变量**
+> DIRECTORY_SEPARATOR 该变量相当于文件分隔符
+> ## **入口文件相关函数**
+>  ### 自动加载函数
+> function userAutoload($class_name)
+>{
+>	//var_dump($class_name);
+>    //先处理确定的（框架中的核心类）
+>    //类名与类文件映射数组
+>    $framework_class_list = array
+>    (
+>    	//核心类，直接在数组中将其加载 
+>       //'类名' =>'类文件地址'
+>       'Controller' =>FRAMEWORK_PATH.'Controller_class.php',
+>       'Factory'    =>FRAMEWORK_PATH.'Factory_class.php',
+>       'Model'      =>FRAMEWORK_PATH.'Model_class.php',
+>       'MySQLDB'    =>FRAMEWORK_PATH.'MySQLDB_class.php',                   
+>    );
+>    //判断判断是否为核心类
+>    if (isset($framework_class_list[$class_name]))
+>    {
+>    	//是核心类
+>    	require $framework_class_list[$class_name];
+>    }
+>    //判断是否为可增加（控制器类，模型类）
+>    //控制器类，截取后十个字符，匹配Controller，以此类推
+>    elseif (substr($class_name, -10) == 'Controller') 
+>    {
+>    	//控制器类，当前平台下controller目录
+>    	require CURRENT_CONTROLLER_PATH.$class_name.'_class.php';
+>    }
+>    elseif (substr($class_name, -5) == 'Model') 
+>    {
+>    	//模型类，当前平台下model目录
+>    	require CURRENT_MODEL_PATH.$class_name.'_class.php';
+>    }
 >
+>}
 
 
 
