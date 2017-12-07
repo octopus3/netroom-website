@@ -34,6 +34,7 @@
 > DIRECTORY_SEPARATOR 该变量相当于文件分隔符
 > ## **入口文件相关函数**
 >  ### 自动加载函数
+> ```php
 > function userAutoload($class_name)
 >{
 >	//var_dump($class_name);
@@ -68,7 +69,7 @@
 >    }
 >
 >}
-
+> ```
 
 
 
