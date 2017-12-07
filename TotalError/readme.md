@@ -28,7 +28,7 @@
 >> ### 3.2.2 
 >>styles 放置css文件
 > # 4.index.php 
-> [入口文件](/index.php)
+> [入口文件](./index.php)
 > ## 入口文件
 > 自动加载函数
 >
