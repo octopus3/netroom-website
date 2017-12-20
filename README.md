@@ -1,4 +1,4 @@
-# netroom-website 
+﻿# netroom-website 
 章鱼想做一个属于网工的官网所以现在从零开始学习HTML、CSS。想必这是一个艰辛的工作
 - [x] 导航栏
 - [x] 背景图
@@ -10,7 +10,8 @@
 - [ ] 关于
 # 大致页面
 ![页面](/页面.png)
-
+# 流程图
+![页面](/流程图.png)
 # **Javascript**
 > # 弹窗函数
 > ``` javascript
