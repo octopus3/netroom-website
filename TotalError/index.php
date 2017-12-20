@@ -88,3 +88,4 @@ $action_name = ACTION . 'Action';
 //$controller = new MatchController();
 //$action_name = $a.'Action';
 $controller->$action_name(); 
+?>
