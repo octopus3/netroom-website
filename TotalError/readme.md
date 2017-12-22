@@ -4,6 +4,7 @@
 >> ## 1.1 后台：back  
 >>  目前暂时没有
 >> ## 1.2 前端：front
+>>> ```php
 >>>class UserloginController extends Controller
 >>>{	
 >>>   //用户登录首页函数，直接请求html代码
