@@ -4,7 +4,14 @@
 >> ## 1.1 后台：back  
 >>  目前暂时没有
 >> ## 1.2 前端：front
->>
+>>>class UserloginController extends Controller
+>>>{	
+>>>   //用户登录首页函数，直接请求html代码
+>>>   public function UserloginAction()	
+>>>{		
+>>>    require CURRENT_VIEW_PATH.'front'.DS.'forum_head.html';  
+>>>}
+>>>}
 >>> ### 1.2.1 m: model(暂时没有模型类文件)
 >>> ### 1.2.2 v: view   
 >>>（放置视图，html代码）
