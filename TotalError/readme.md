@@ -1,9 +1,11 @@
 # 项目架构
-> # 1.application
+> # 1.application应用，平台
 >
 >> ## 1.1 后台：back  
 >>  目前暂时没有
 >> ## 1.2 前端：front
+>>>###1.2.1controller
+>>>（页面请求，传递数据到数据库)
 >>> ```php
 >>>class UserloginController extends Controller
 >>>{	
@@ -14,18 +16,20 @@
 >>>}
 >>>}
 >>>```
->>> ### 1.2.1 m: model(暂时没有模型类文件)
->>> ### 1.2.2 v: view   
+>>> ### 1.2.2 m: model(暂时没有模型类文件)
+>>> ### 1.2.3 v: view   
 >>>（放置视图，html代码）
->>> ### 1.2.3 c: controller
->>>（页面请求，传递数据到数据库)
 >>> ### 1.2.4 js 
 >（放置JS代码）
 > # 1.3测试：test
-> # 2.framework：
+> 同时也是有MVC三个文件
 >
-# 框架
+# 2.framework框架
 放置一些工厂类，基础控制器类，基础模型类，数据库类。<br>
+>>##2.1工厂类
+>>>```php
+class Factory{	/*	生成模型的单例对象	@param $model_name string	@return obect	*/	public static function M($model_name)	{		static $model_list = array();		//存储已经实例化好的模型对象的列表，下标模型名，值模型对象		//判断当前模型是否已经实例化		if(!isset($model_list[$model_name]))		{			//没有实例化过			//require dirname(__DIR__).DS.'application'.DS.PLATFORM.DS.'model'.DS.$model_name.'_class.php';			$model_list[$model_name] = new $model_name;//可变标识符，可变类		}		return $model_list[$model_name];	}}
+>>>```
 > # 3.web
 >  
 > ## 3.1 
@@ -35,7 +39,7 @@
 >> ### 3.2.1 images  
 >>放置图片
 >> ### 3.2.2 
->>styles 放置css文件
+>>styles 放置css文件和js文件
 > # 4.index.php 
 > [入口文件](./index.php)
 > **变量解释**
