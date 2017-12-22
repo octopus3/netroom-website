@@ -13,6 +13,7 @@
 >>>    require CURRENT_VIEW_PATH.'front'.DS.'forum_head.html';  
 >>>}
 >>>}
+>>>```
 >>> ### 1.2.1 m: model(暂时没有模型类文件)
 >>> ### 1.2.2 v: view   
 >>>（放置视图，html代码）
